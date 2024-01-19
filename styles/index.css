@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'deja_vu_bold';
+    src: url('../fonts/dejavu-sans/DejaVuSans-Bold.ttf');
+  }
+@font-face {
+    font-family: 'deja_vu';
+    src: url('../fonts/dejavu-sans/DejaVuSans.ttf');
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black_border:#1c1f27cc;
+}
+body{
+    background-color: #f0f8ff;
+    font-family: deja_vu_bold, Arial, Helvetica, sans-serif;
+}
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    width:auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.about_me_introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+main img{
+    width:150px;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 60px;
+    box-shadow: 2px 2px 4px var(--black_border);
+    background-size: contain;
+    background-position: center;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    margin: 30px 80px;
+    text-align: center;
+    line-height: 1.9em;
+    font-family: deja_vu,Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 0;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1000px;
+    border: 1px solid  ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2px;
+    color: black;
+    background-color: inherit;
+}
+aside img{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+footer{
+    margin-top: 30px;
+    border-top: 1px dashed var(--black_border);
+    text-align: center;
+}
