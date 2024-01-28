@@ -39,17 +39,23 @@ a {
 a.social-link {
     text-decoration: none;
 }
-
+nav {
+    margin-bottom: 10px;
+}
+nav a {
+    padding: 0 5px;
+}
 div.hero{
     position: relative;
     display: flex;
     justify-content: center;
-    height: auto;
+    height: 350px;
 }
 .hero img{
     display: block;
     width: auto;
     height: auto;
+    max-width: 800px;
 }
 article{
     position: absolute;
@@ -57,8 +63,9 @@ article{
     flex-direction: row-reverse;
     align-items: center;
     padding: 5px 15px;
+    margin: 0 40px;
     margin-top: 10px;
-    top: 50px;
+    top: 95px;
     height: 120px;
     opacity: 0.9;
     background: var(--accent2-color);
@@ -69,9 +76,10 @@ article{
     position: absolute;
     background: var(--accent2-color);
     padding: 3px 100px;
+    text-transform: uppercase;
     border-radius: 5px;
     font-size: larger;
-    top: 5px;
+    top: 35px;
     text-align: center;
     color: var(--heading-text-color);
 }
