@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+:root {
+    --primary-color: #140B5C;
+    --secondary-color: #D1C1BB;
+    --text-color: #000000;
+    --heading-text-color: #140B5C;
+    --accent1-color: #D36836;
+    --accent2-color: #FBF4F4;
+
+    --heading-font: Barlow;
+    --paragraph-font: "Patua One", Helvetica, sans-serif;
+
+    --nav-link-color: #D36836;
+    --nav-background-color: #FBF4F4;
+    --nav-hover-link-color: #FBF4F4;
+    --nav-hover-background-color: #D36836;
+}
+
+body {
+    font-family:  "Patua One", Helvetica, sans-serif; 
+    color: var(--text-color);
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-text-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+a.social-link {
+    text-decoration: none;
+}
+
+div.hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.hero img{
+    display: block;
+    width: auto;
+    height: auto;
+}
+article{
+    position: absolute;
+    padding: 10px 15px;
+    top: 50px;
+    height: 120px;
+    opacity: 0.9;
+    background: var(--accent2-color);
+    color: var(--primary-color);
+}
+.hero h1{
+    position: absolute;
+    top: -10px;
+    text-align: center;
+    color: var(--accent2-color);
+}
+article p{
+    color: black;
+}
+
+.hero article img{
+    float: right;
+    height: 85%;
+    border: 2px solid var(--accent1-color);
+    opacity: 1;
+    border-radius: 20px;
+}
