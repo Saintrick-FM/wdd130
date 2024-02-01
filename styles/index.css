@@ -17,20 +17,31 @@
     --bg_color:#f0f8ff;
     --text_color:#1c1f27cc;
 }
+header, .grid, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 header {
     background-color: var(--black_border);
     height: 150px;
     padding-left: 15px;
 }
-header nav {
-    display: flex;
+nav {
     padding-top: 15px;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
-header nav a{
+a{
     color: white;
-    padding: 2px;
+display: block;
+    padding: 0.5rem ;
+    text-decoration: none;
 }
 body{
     background-color: var(--bg_color);
@@ -38,17 +49,18 @@ body{
     padding-inline: 15px;
 }
 main {
-    max-width: 840px;
     height: auto;
 }
 h1, h2{
     display: flex;
-    /* justify-content: center; */
     width:auto;
     margin-top: 20px;
     font-weight: 600;
 }
-
+main h1{
+    border-bottom: 2px solid var(--black_border);
+    margin-bottom: 15px;
+}
 main img{
     border-radius: 10%;
     width: 150px;
@@ -58,39 +70,26 @@ main img{
     background-position: center;
     float: right;
 }
-
-p{
-    display: flex;
-    justify-content: center;
-    width: auto;
-    height: 200px;
-    margin-top: 20px; 
-    font-family: deja_vu,Arial, Helvetica, sans-serif;
-    padding: 0;
-    padding-right: 15px;
-    text-align: justify;
-}
 aside {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin: 0 auto; */
-    width: 840px;
-    /* border: 1px solid ; */
     border-radius: 10px;
     text-align: center;
     padding: 10px; 
     background-color: inherit; 
     color: black; 
+    grid-row: 1/2
 }
 aside h2 {
     position: absolute;
     top: -10px;
 }
 ul li{
-    padding-left: 10px;
+    margin-left: 20px;
 }
+
 p a{
     display: contents;
 }
@@ -98,18 +97,40 @@ aside img{
     width: 200px;
     height: auto;
     margin-top: 30px;
+    margin:0 auto;
+    
 }
 footer{
-    margin-top: 30px;
     border-top: 1px dashed var(--black_border);
-    text-align: center;
+    text-align: center !important;
+    padding: 20px 0;
 }
 /* Class Selectors */
 
 .box {
     margin: 1rem;
-    border: 1px solid var(--black_border);
-    padding: 1rem;
-    background-color: var(--bg_color);
-    color: var(--text_color);
+    border: 1px solid var(--black_border); 
+     padding: 1rem;
+    background-color: var(--black_border);
+    color: white;
+}
+.aboutMeParagraph{
+    display: contents;
+    width: auto;
+    height: auto;
+    font-family: deja_vu,Arial, Helvetica, sans-serif;
+    padding: 0;
+    padding-right: 15px;
+    text-align: justify;
+    clear: right;
+}
+.aboutMeParagraph a{
+    color: blue;
+}
+.describeCountry{
+    margin-top: 15px;
+    text-align: justify;
+}
+.favoriteTemple{
+    margin-top: 10px;
 }
