@@ -43,7 +43,7 @@ nav {
     margin-bottom: 10px;
 }
 nav a {
-    padding: 0 5px;
+    padding: 0 20px;
 }
 div.hero{
     position: relative;
@@ -94,3 +94,85 @@ article p{
     opacity: 1;
     border-radius: 20px;
 }
+header{
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 10px;
+}
+nav{
+    display: flex;
+    text-align: right;
+    margin: 0 40px 0 auto;
+    padding: 10px;
+    
+}
+.logo{
+    width: 80px;
+	height: auto;
+}
+.navigation {
+	display: flex;
+	list-style: none;
+}
+.history {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.history h2{
+    width: fit-content;
+    margin: 10px auto;
+}
+.history div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.history div img{
+    max-width: 150px;
+}
+.first-paragraph{
+    margin-right:10px;
+    text-align: justify;
+}
+.second-paragraph{
+    margin-left:10px;
+    text-align: justify;
+}
+/* Adventures */
+.adventures {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin-right: 10px; 
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 5px; 
+}
+
