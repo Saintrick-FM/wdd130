@@ -86,6 +86,10 @@ article{
 article p{
     color: black;
 }
+article h1{
+    top: -75px !important;
+    right: 185px;
+}
 
 .hero article img{
     float: right;
