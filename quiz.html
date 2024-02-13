@@ -3,38 +3,43 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="styles/quiz.css">
-    <title>HTML and CSS quiz</title>
+    <meta
+      name="description"
+      content="Test your HTML and CSS knowledge with our interactive quiz! Answer questions on HTML, CSS properties, and more. Submit your answers and see how well you know web development. Try our HTML and CSS quiz now!"
+    >
+    <meta name="author" content="Francy Saintrick MALONGA" >
+    <link rel="stylesheet" href="styles/quiz.css" >
+    <title>Mini HTML and CSS Quiz</title>
   </head>
   <body>
     <h1>HTML and CSS Quiz</h1>
 
-    <form >
-     
-      <label for="q1">1. What does HTML stand for?</label><br >
-      <input type="text" id="q1" name="q1" required ><br >
+    <form>
+      <label for="q1">1. What does HTML stand for?</label>
+      <input type="text" id="q1" name="q1" required >
 
       <label for="q2"
         >2. Explain the purpose of the CSS property "margin" in one
         sentence:</label
-      ><br >
-      <textarea id="q2" name="q2" rows="4" cols="50" required></textarea><br >
+      >
+      <textarea id="q2" name="q2" rows="4" cols="50" required></textarea>
 
       <label for="q3"
         >3. Which tag is used to define an unordered list in HTML?</label
-      ><br >
+      >
       <select id="q3" name="q3" required>
         <option value="" selected disabled>Choose one</option>
         <option value="ul">ul</option>
         <option value="ol">ol</option>
-        <option value="li">li</option></select
-      ><br >
-     
+        <option value="li">li</option>
+      </select>
+      
+
       <label for="q4"
         >4. How many columns are there in a standard CSS grid?</label
-      ><br >
-     <input type="number" id="q4" name="q4" required ><br >
-   
+      >
+      <input type="number" id="q4" name="q4" required >
+
       <input type="submit" value="Submit Quiz" >
     </form>
   </body>
