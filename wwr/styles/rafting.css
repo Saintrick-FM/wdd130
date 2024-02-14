@@ -285,10 +285,11 @@ footer{
     cursor: pointer;
     font-size: 16px;
     width: 100%;
+    transition: .2s ease-in-out 0s;
   }
   input[type="submit"]:hover {
     background-color: #4caf50;
-    translate: 1px;
+    transform: scale(1.05);
   }
   .contact-row,
   .employee-profiles {
