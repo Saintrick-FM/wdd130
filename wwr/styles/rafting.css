@@ -454,30 +454,31 @@ tfoot {
 }
 /* Home page */
 
-.hero {
+.hero-home {
   position: relative;
   overflow: hidden;
 }
 
-.hero img {
+.hero-home img {
   width: 100%;
   height: auto;
   filter: brightness(70%);
 }
 
-.hero-text {
+.hero-text h1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  background: none;
+  width: 100%;
   text-align: center;
-  color: #fff;
+  color: #fff !important;
 }
 
 .newsletter {
   background-color: #f0f0f0;
   padding: 20px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .newsletter h2 {
@@ -499,15 +500,16 @@ input {
   margin-bottom: 10px;
 }
 
-button {
+.btn-newsletter {
   padding: 10px 20px;
   background-color: #333;
   color: #fff;
   border: none;
   cursor: pointer;
+  width: 75% !important;
 }
 
-button:hover {
+.btn-newsletter:hover {
   background-color: #555;
 }
 
